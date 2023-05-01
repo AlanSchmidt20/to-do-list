@@ -1,0 +1,51 @@
+.todos {
+  display: flex;
+  width: 47.5%;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: rgb(91, 221, 253);
+  /*   background-color: rgb(50, 195, 205);
+ */
+}
+
+.todos-heading {
+  font-size: 30px;
+  color: white;
+}
+
+.container {
+  display: flex;
+  width: 95%;
+  margin-top: 10px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.remove {
+  background-color: rgb(228, 66, 66);
+}
+
+.dragactive {
+  background-color: rgb(0, 221, 236);
+}
+.dragcomplete {
+  background-color: rgb(255, 38, 0);
+}
+
+/* @media (max-width: 1200px) {
+  .todos {
+    width: 46.5%;
+  }
+} */
+@media (max-width: 700px) {
+  .container {
+    width: 92%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .todos {
+    width: 90%;
+  }
+}
