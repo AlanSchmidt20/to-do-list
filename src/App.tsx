@@ -107,7 +107,7 @@ const App: React.FC = () => {
     e.preventDefault();
 
     if (todo) {
-      setTodos([...todos, { id: Date.now(), todo, isDone: false }]);
+      setTodos([{ id: Date.now(), todo, isDone: false }, ...todos]);
       setTodo("");
     }
   };
